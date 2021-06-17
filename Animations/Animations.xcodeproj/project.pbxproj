@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A72877D267AA7F400F5F6B4 /* DraggingTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A72877C267AA7F400F5F6B4 /* DraggingTexts.swift */; };
+		8A728780267AA80700F5F6B4 /* DraggingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A72877F267AA80700F5F6B4 /* DraggingCard.swift */; };
+		8A728783267AA8ED00F5F6B4 /* ImpulsingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A728782267AA8ED00F5F6B4 /* ImpulsingButton.swift */; };
+		8A728786267AA93900F5F6B4 /* BindingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A728785267AA93900F5F6B4 /* BindingAnimation.swift */; };
+		8A72878A267AAA1600F5F6B4 /* ExplicitAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A728789267AAA1600F5F6B4 /* ExplicitAnimation.swift */; };
+		8A72878D267AAF2200F5F6B4 /* ShowHideViewUsingTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A72878C267AAF2200F5F6B4 /* ShowHideViewUsingTransition.swift */; };
 		8A7949B8267949B700922131 /* AnimationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7949B7267949B700922131 /* AnimationsApp.swift */; };
 		8A7949BA267949B700922131 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7949B9267949B700922131 /* ContentView.swift */; };
 		8A7949BC267949B700922131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A7949BB267949B700922131 /* Assets.xcassets */; };
@@ -14,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A72877C267AA7F400F5F6B4 /* DraggingTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggingTexts.swift; sourceTree = "<group>"; };
+		8A72877F267AA80700F5F6B4 /* DraggingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggingCard.swift; sourceTree = "<group>"; };
+		8A728782267AA8ED00F5F6B4 /* ImpulsingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpulsingButton.swift; sourceTree = "<group>"; };
+		8A728785267AA93900F5F6B4 /* BindingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingAnimation.swift; sourceTree = "<group>"; };
+		8A728789267AAA1600F5F6B4 /* ExplicitAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplicitAnimation.swift; sourceTree = "<group>"; };
+		8A72878C267AAF2200F5F6B4 /* ShowHideViewUsingTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowHideViewUsingTransition.swift; sourceTree = "<group>"; };
 		8A7949B4267949B700922131 /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7949B7267949B700922131 /* AnimationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsApp.swift; sourceTree = "<group>"; };
 		8A7949B9267949B700922131 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +66,12 @@
 			children = (
 				8A7949B7267949B700922131 /* AnimationsApp.swift */,
 				8A7949B9267949B700922131 /* ContentView.swift */,
+				8A728782267AA8ED00F5F6B4 /* ImpulsingButton.swift */,
+				8A728785267AA93900F5F6B4 /* BindingAnimation.swift */,
+				8A728789267AAA1600F5F6B4 /* ExplicitAnimation.swift */,
+				8A72877F267AA80700F5F6B4 /* DraggingCard.swift */,
+				8A72877C267AA7F400F5F6B4 /* DraggingTexts.swift */,
+				8A72878C267AAF2200F5F6B4 /* ShowHideViewUsingTransition.swift */,
 				8A7949BB267949B700922131 /* Assets.xcassets */,
 				8A7949C0267949B700922131 /* Info.plist */,
 				8A7949BD267949B700922131 /* Preview Content */,
@@ -138,7 +156,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A728783267AA8ED00F5F6B4 /* ImpulsingButton.swift in Sources */,
+				8A72878D267AAF2200F5F6B4 /* ShowHideViewUsingTransition.swift in Sources */,
 				8A7949BA267949B700922131 /* ContentView.swift in Sources */,
+				8A728786267AA93900F5F6B4 /* BindingAnimation.swift in Sources */,
+				8A72877D267AA7F400F5F6B4 /* DraggingTexts.swift in Sources */,
+				8A728780267AA80700F5F6B4 /* DraggingCard.swift in Sources */,
+				8A72878A267AAA1600F5F6B4 /* ExplicitAnimation.swift in Sources */,
 				8A7949B8267949B700922131 /* AnimationsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

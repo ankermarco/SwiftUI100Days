@@ -8,66 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var animationAmount: CGFloat = 1
     
-    @State private var animationDegree = 0.0
+    
+    @State private var enabled = false
     var body: some View {
-        List {
-            Button("Tap me") {
-                //            animationAmount += 1
-            }
-            .padding(50)
-            .background(Color.red)
-            .foregroundColor(.white)
-            .clipShape(Circle())
-            //        .scaleEffect(animationAmount)
-            .blur(radius: (animationAmount - 1) * 3)
-            .overlay(
-                Circle()
-                    .stroke(Color.red)
-                    .scaleEffect(animationAmount)
-                    .opacity(Double(2 - animationAmount))
-                    .animation(
-                        Animation.easeOut(duration: 1)
-                            .repeatForever(autoreverses: false)
-                    )
+        NavigationView {
+            List {
                 
-            ).onAppear {
-                self.animationAmount = 2
-            }
-            Stepper("Scale amount", value: $animationAmount.animation(Animation.easeInOut(duration: 1)
-                                                                        .repeatCount(3, autoreverses: true)), in: 1...10)
-            
-            Spacer()
-            
-            Button("Tap Me") {
-                self.animationAmount += 1
-            }
-            .padding(40)
-            .background(Color.red)
-            .foregroundColor(.white)
-            .clipShape(Circle())
-            .scaleEffect(animationAmount)
-            
-            Spacer()
-            
-            Button("Tap Me") {
-                
-                
-            }
-            .padding(40)
-            .background(Color.red)
-            .foregroundColor(.white)
-            .clipShape(Circle())
-            .rotation3DEffect(
-                .degrees(animationDegree),
-                axis: (x: 0.0, y: 1.0, z: 0.0)
-            ).onAppear {
-                withAnimation(Animation.linear(duration: 1).repeatForever(autoreverses: false)) {
-                    self.animationDegree += 360
-                }
+                NavigationLink("Implicit animation", destination: ImpulsingButton())
+                NavigationLink("Binding animation", destination: BindingAnimation())
+                NavigationLink("Explicit animation", destination: ExplicitAnimation())
+                NavigationLink("Dragging gesture animation", destination: DraggingCard())
+                NavigationLink("Dragging gesture animation 2", destination: DraggingTexts())
+                NavigationLink("Show hide view using transition", destination: ShowHideViewUsingTransition())
             }
         }
+        
     }
 }
 
